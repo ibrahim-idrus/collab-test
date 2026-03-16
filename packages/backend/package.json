@@ -1,0 +1,32 @@
+{
+  "name": "@collab-test/backend",
+  "version": "0.0.0",
+  "description": "Backend API powered by Hono on Cloudflare Workers with DrizzleORM and NeonDB",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "cf-typegen": "wrangler types"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@hono/zod-validator": "^0.7.6",
+    "@neondatabase/serverless": "^1.0.2",
+    "drizzle-orm": "^0.45.1",
+    "hono": "^4.12.8",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260316.1",
+    "drizzle-kit": "^0.31.9",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.73.0"
+  }
+}

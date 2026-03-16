@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+.output/
+
+# Environment files (never commit secrets)
+.env
+.env.local
+.env.*.local
+.dev.vars
+
+# Vite cache
+.vite/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Wrangler
+.wrangler/
+
+# DrizzleORM
+# (keep migrations in source control, but not local sqlite)
+*.db
+*.db-shm
+*.db-wal
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
+
+# Logs
+*.log
+npm-debug.log*
